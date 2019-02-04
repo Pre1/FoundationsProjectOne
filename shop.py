@@ -71,7 +71,7 @@ def get_order():
     order_list = []
     # your code goes here!
     print("What's your order? (please enter the exact spelling of the\
-        item you want type \"Exit\" to end your order.)")
+item you want type \"Exit\" to end your order.)")
 
     while True:
         inn = input("").lower()
@@ -125,4 +125,4 @@ def print_order(order_list):
     total_price = get_total_price(order_list)
     print("The total will be: SAR %f" %(total_price))
     print(accept_credit_card(total_price))
-    print("Thank you at shipping at %s" %(cupcake_shop_name))
+    print("Thank you at shipping at {}".format(cupcake_shop_name))
