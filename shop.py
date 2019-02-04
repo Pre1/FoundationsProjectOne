@@ -103,8 +103,8 @@ def get_total_price(order_list):
     total = 0
     # your code goes here!
     for itm in order_list:
-        if m in menu:
-            total += m
+        if itm in menu:
+            total += menu[itm]
         elif org in original_flavors:
             total += original_price
         else: 
